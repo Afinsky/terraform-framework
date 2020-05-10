@@ -1,8 +1,8 @@
 module "vpc" {
   source = "../../modules/vpc/"
 
-  name = "my-vpc"
-  cidr = "10.0.0.0/16"
+  name = "${local.resource_name}"
+  cidr = var.cidr
 
   azs             = var.azs
   private_subnets = var.private_subnets

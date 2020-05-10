@@ -6,5 +6,7 @@ locals {
     "coherent:owner"       = "AlexeyBotyan@coherentsolutions.com"
   }
 
-  #resource_name = var.project_name == null ? "${var.environment}" : "${var.project_name}-${var.environment}"
+  project_name = "roofle"
+
+  resource_name = "${var.environment}-${local.project_name}"
 }

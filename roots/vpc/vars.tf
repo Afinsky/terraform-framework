@@ -22,3 +22,8 @@ variable "database_subnets" {
   description = ""
   type = list
 }
+
+variable "cidr" {
+  description = ""
+  type = string
+}
